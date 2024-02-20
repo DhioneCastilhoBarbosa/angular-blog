@@ -1,0 +1,28 @@
+.big-card-container {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bid-card-photo > img {
+  width: 100%;
+  min-width: 400px;
+}
+
+.bid-card-title > h1 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.bid-card-description {
+  margin-top: 20px;
+}
+.bid-card-description > p > a {
+  color: gray;
+}
