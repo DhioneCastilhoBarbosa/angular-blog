@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-big-card',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './big-card.component.html',
   styleUrl: './big-card.component.css'
 })
@@ -16,8 +17,12 @@ export class BigCardComponent implements OnInit {
   @Input()
   cardDescription: string = ""
   @Input()
-  Id: string = "content/0"
-  constructor() { }
+  Id: string = "0"
+  constructor(private router:Router) { }
+
+  navigateToContent(){
+    this.router.navigate(['content/',this.Id])
+  }
 
   ngOnInit(): void {
 

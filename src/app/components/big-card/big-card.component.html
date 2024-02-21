@@ -7,12 +7,12 @@
         >
     </div>
     <div class="bid-card-title">
-        <h1><a href={{Id}}> {{ cardTitle}}</a></h1>
+        <h1> <a [routerLink]="['content/',Id]"> {{ cardTitle}}</a></h1>
     </div>
     <div class="bid-card-description">
 
         <p>
-            <a href={{Id}}>
+            <a [routerLink]="['content/',Id]">
                 {{cardDescription}}
             </a>
         </p>
