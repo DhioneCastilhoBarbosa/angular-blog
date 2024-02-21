@@ -17,3 +17,9 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+@media screen and (max-width: 600px) {
+  .menu_title_container > h1 {
+    font-size: 30px;
+  }
+}
